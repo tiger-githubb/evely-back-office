@@ -1,0 +1,33 @@
+{
+  "name": "archipulse",
+  "version": "7.4.0",
+  "description": "Le Système d’Archivage Électronique  qui gère et protège tout l’historique de votre entreprise.",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "build": "turbo build",
+    "start": "turbo start",
+    "clean": "turbo clean && rm -rf node_modules .turbo",
+    "cache:clean": "turbo cache:clean && rm -rf .turbo",
+    "pulse:dev": "turbo dev --filter=pulse",
+    "pulse:lint": "turbo lint --filter=pulse",
+    "pulse:build": "turbo build --filter=pulse",
+    "pulse:start": "turbo start --filter=pulse",
+    "pulse:clean": "turbo clean --filter=pulse",
+    "gen-icons": "turbo gen-icons --filter=core",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "husky": "^9.1.6",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "turbo": "2.1.3",
+    "typescript-config": "workspace:*"
+  },
+  "packageManager": "pnpm@9.1.4",
+  "engines": {
+    "node": ">=18"
+  }
+}
