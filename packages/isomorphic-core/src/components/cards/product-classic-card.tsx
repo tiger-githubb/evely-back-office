@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { PiMinus, PiPlus } from "react-icons/pi";
 import { Button, Text, Title } from "rizzui";
-import { useCart } from "../../../../../apps/pulse-board/src/store/quick-cart/cart.context";
+import { useCart } from "../../../../../apps/evely-board/src/store/quick-cart/cart.context";
 import { CartItem, PosProduct } from "../../types";
 import cn from "../../utils/class-names";
 import { toCurrency } from "../../utils/to-currency";

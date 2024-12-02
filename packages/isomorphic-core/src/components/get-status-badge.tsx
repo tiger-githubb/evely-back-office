@@ -1,7 +1,7 @@
 "use client";
 
 import { Badge } from "rizzui";
-import { useLayout } from "../../../../apps/pulse-board/src/layouts/use-layout";
+import { useLayout } from "../../../../apps/evely-board/src/layouts/use-layout";
 import cn from "../utils/class-names";
 
 const classes = {

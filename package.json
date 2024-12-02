@@ -1,5 +1,5 @@
 {
-  "name": "archipulse",
+  "name": "evely",
   "version": "7.4.0",
   "description": "Le Système d’Archivage Électronique  qui gère et protège tout l’historique de votre entreprise.",
   "private": true,
@@ -10,11 +10,11 @@
     "start": "turbo start",
     "clean": "turbo clean && rm -rf node_modules .turbo",
     "cache:clean": "turbo cache:clean && rm -rf .turbo",
-    "pulse:dev": "turbo dev --filter=pulse",
-    "pulse:lint": "turbo lint --filter=pulse",
-    "pulse:build": "turbo build --filter=pulse",
-    "pulse:start": "turbo start --filter=pulse",
-    "pulse:clean": "turbo clean --filter=pulse",
+    "evely:dev": "turbo dev --filter=evely",
+    "evely:lint": "turbo lint --filter=evely",
+    "evely:build": "turbo build --filter=evely",
+    "evely:start": "turbo start --filter=evely",
+    "evely:clean": "turbo clean --filter=evely",
     "gen-icons": "turbo gen-icons --filter=core",
     "prepare": "husky"
   },

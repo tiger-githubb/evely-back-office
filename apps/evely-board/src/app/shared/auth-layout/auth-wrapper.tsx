@@ -149,7 +149,7 @@ function AuthFooter() {
       <div className="text-center leading-relaxed text-gray-500 lg:text-start">
         © Copyright 2024. Powered by{' '}
         <Link
-          href="https://archi-pulse.com/"
+          href="https://evely.com/"
           className="font-medium transition-colors hover:text-primary"
         >
           Archi Pulse

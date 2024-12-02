@@ -1,5 +1,5 @@
 {
-  "name": "pulse",
+  "name": "evely",
   "version": "7.4.0",
   "description": " The Electronic Archiving System that manages and protects your company's entire history.",
   "private": true,
@@ -132,5 +132,5 @@
     "node": ">=18.15.0"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "pulse@0.0.1"
+  "_id": "evely@0.0.1"
 }
