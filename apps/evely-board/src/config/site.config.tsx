@@ -10,8 +10,9 @@ enum MODE {
 }
 
 export const siteConfig = {
-  title: "Pulse - Votre solution d'archivage",
-  description: `Pulse the ultimate file management solution for businesses. Streamline your document management, enhance collaboration, and ensure data security.`,
+  title:
+    'Evely - Découvrez les meilleurs événements locaux et les choses à faire',
+  description: `Evely Découvrez les meilleurs événements locaux et les choses à faire`,
   logo: logoImg,
   icon: logoIconImg,
   mode: MODE.LIGHT,
@@ -25,13 +26,13 @@ export const metaObject = (
   description: string = siteConfig.description
 ): Metadata => {
   return {
-    title: title ? `${title} - Pulse Archive` : siteConfig.title,
+    title: title ? `${title} - Evely` : siteConfig.title,
     description,
     openGraph: openGraph ?? {
-      title: title ? `${title} - Pulse Archive` : title,
+      title: title ? `${title} - Evely` : title,
       description,
       url: 'https://isomorphic-furyroad.vercel.app',
-      siteName: 'Pulse Archive', // https://developers.google.com/search/docs/appearance/site-names
+      siteName: 'Evely', // https://developers.google.com/search/docs/appearance/site-names
       // images: {
       // url: 'https://s3.amazonaws.com/redqteam.com/isomorphic-furyroad/itemdep/isobanner.png',
       //   width: 1200,

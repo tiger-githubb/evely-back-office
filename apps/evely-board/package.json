@@ -1,7 +1,7 @@
 {
   "name": "evely",
   "version": "7.4.0",
-  "description": " The Electronic Archiving System that manages and protects your company's entire history.",
+  "description": "Evely est une plateforme moderne de gestion d'événements .elle permet aux utilisateurs de découvrir, d'organiser et de réserver des événements facilement, offrant ainsi une expérience transparente aux organisateurs d'événements et aux participants.",
   "private": true,
   "scripts": {
     "dev": "next dev",

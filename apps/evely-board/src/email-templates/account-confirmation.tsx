@@ -35,7 +35,7 @@ export default function VercelInviteUserEmail(
             />
           </Section>
           <Heading style={heading}>
-            Welcome to <strong>Pulse Archive</strong>
+            Welcome to <strong>Evely</strong>
           </Heading>
           <Text style={subheading}>
             Hello <strong>{username}</strong>, (
@@ -52,7 +52,7 @@ export default function VercelInviteUserEmail(
             }}
           >
             <Link style={global.button} href={demoLink}>
-              Start Using Pulse
+              Start Using Evely
             </Link>
           </Section>
           <Text style={subheading}>

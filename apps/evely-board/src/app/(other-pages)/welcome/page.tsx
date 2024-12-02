@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import { Button, Title, Text } from 'rizzui';
 import LaptopImg from '@public/welcome-laptop.png';
 import MobileImg from '@public/welcome-mobile.png';
+import Image from 'next/image';
+import { Button, Text, Title } from 'rizzui';
 
 export default function WelcomePage() {
   return (
@@ -12,7 +12,7 @@ export default function WelcomePage() {
             as="h2"
             className="mb-3 text-[22px] font-bold leading-snug sm:text-2xl md:mb-5 md:text-3xl md:leading-snug xl:mb-7 xl:text-4xl xl:leading-normal 2xl:text-[40px] 3xl:text-5xl 3xl:leading-snug"
           >
-            Welcome to Pulse <br />
+            Welcome to Evely <br />
             Ultimate Dashboard.
           </Title>
           <Text className="mb-6 max-w-[612px] text-sm leading-loose text-gray-500 md:mb-8 xl:mb-10 xl:text-base xl:leading-loose">

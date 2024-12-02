@@ -9,7 +9,7 @@ export default function HealthCheck() {
     const checkHealth = async () => {
       try {
         await axios.get(
-          'https://api.dev.streamline-pulse.calculussolututions.tech/app/info/health-check'
+          'https://api.dev.streamline-evely.calculussolututions.tech/app/info/health-check'
         );
         setHealthStatus('OK');
       } catch (error) {

@@ -19,7 +19,7 @@ export const sendEmail = async (data: EmailPayload) => {
 
   try {
     await transporter.sendMail({
-      from: `Pulse Archive<${env.SMTP_FROM_EMAIL}>`,
+      from: `Evely<${env.SMTP_FROM_EMAIL}>`,
       ...data,
     });
     return true;

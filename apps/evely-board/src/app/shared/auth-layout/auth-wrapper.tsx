@@ -152,7 +152,7 @@ function AuthFooter() {
           href="https://evely.com/"
           className="font-medium transition-colors hover:text-primary"
         >
-          Archi Pulse
+          Evely
         </Link>
         , all rights reserved.
       </div>

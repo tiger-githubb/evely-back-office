@@ -1,4 +1,4 @@
-## Pulse Starter Template with Internationalization support
+## Evely Starter Template with Internationalization support
 
 **Run the following commands from the packages root**
 
