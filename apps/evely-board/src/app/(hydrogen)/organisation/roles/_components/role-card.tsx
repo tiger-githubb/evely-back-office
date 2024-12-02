@@ -2,9 +2,9 @@
 
 import ModalButton from '@/app/shared/modal-button';
 import { useModal } from '@/app/shared/modal-views/use-modal';
-import { users } from '@/data/roles-permissions';
 import { deleteRole } from '@/server/services/roles.service';
 import { RoleType } from '@/types/role.type';
+import { getRandomAvatar } from '@/utils/user-profile-image';
 import TrashIcon from '@core/components/icons/trash';
 import UserCog from '@core/components/icons/user-cog';
 import cn from '@core/utils/class-names';
@@ -68,14 +68,14 @@ export default function RoleCard({ role, className }: RoleCardProps) {
       </header>
       <div className="mt-4 flex items-center gap-2">
         <div className="flex items-center">
-          {users?.slice(0, 4).map((user) => (
+          {[...Array(Math.min(role._count.users, 4))].map((_, index) => (
             <figure
-              key={user.id}
+              key={index}
               className="relative z-10 -ml-1.5 h-8 w-8 rounded-full border-2 border-white"
             >
               <Image
-                src={user.avatar}
-                alt="user avatar"
+                src={getRandomAvatar(index + 1)}
+                alt={`user avatar ${index + 1}`}
                 fill
                 className="rounded-full"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -83,8 +83,9 @@ export default function RoleCard({ role, className }: RoleCardProps) {
             </figure>
           ))}
         </div>
-        <span>{users.length} Utilisateurs</span>
+        <span>{role._count.users} Utilisateurs</span>
       </div>
+
       <div className="flex items-center justify-center gap-2 lg:mt-6">
         <ModalButton
           customSize="700px"

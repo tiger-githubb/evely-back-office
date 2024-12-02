@@ -11,5 +11,8 @@ export type RoleType = {
   name: string;
   color: string | null;
   createdAt: Date;
+  _count: {
+    users: number;
+  };
   permissionsPerModule: PermissionPerModule[];
 };
