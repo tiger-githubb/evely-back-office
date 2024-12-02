@@ -11,7 +11,6 @@ export const createUserSchema = z.object({
   isSuperAdmin: z.boolean().default(false),
   active: z.boolean().default(false),
   roleId: z.number({ required_error: 'Role ID is required' }),
-  groupId: z.number({ required_error: 'Group ID is required' }),
 });
 
 export type CreateUserInput = z.infer<typeof createUserSchema>;

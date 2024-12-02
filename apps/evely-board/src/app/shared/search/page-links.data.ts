@@ -8,21 +8,8 @@ export const pageLinks = [
   },
   // label end
 
-  {
-    name: 'File Manager',
-    href: routes.file.dashboard,
-  },
-
-  // label start
-  {
-    name: 'Apps',
-  },
   // label end
 
-  {
-    name: 'File Manager',
-    href: routes.file.manager,
-  },
   // label start
   {
     name: 'Widgets',

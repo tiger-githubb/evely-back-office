@@ -4,15 +4,7 @@ export const routes = {
     users: '/organisation/users',
     roles: '/organisation/roles',
     modules: '/organisation/modules',
-    groups: '/organisation/groups',
     permissions: '/organisation/permissions',
-  },
-
-  file: {
-    dashboard: '/file',
-    manager: '/file-manager',
-    upload: '/file-manager/upload',
-    create: '/file-manager/create',
   },
 
   welcome: '/welcome',

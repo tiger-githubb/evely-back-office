@@ -1,14 +1,12 @@
 import { routes } from '@/config/routes';
 import {
   PiCardsThreeDuotone,
-  PiFolderDuotone,
   PiHouseDuotone,
   PiInfoDuotone,
   PiLockKeyDuotone,
   PiShieldCheckDuotone,
   PiShootingStarDuotone,
   PiUserPlusDuotone,
-  PiUsersThreeDuotone,
 } from 'react-icons/pi';
 
 // Note: do not add href in the label object, it is rendering as label
@@ -23,11 +21,7 @@ export const menuItems = [
     href: routes.home,
     icon: <PiHouseDuotone />,
   },
-  {
-    name: 'File Manager',
-    href: routes.file.manager,
-    icon: <PiFolderDuotone />,
-  },
+
   {
     name: 'Organisation',
   },
@@ -36,11 +30,7 @@ export const menuItems = [
     href: routes.organisation.modules,
     icon: <PiCardsThreeDuotone />,
   },
-  {
-    name: 'Groups',
-    href: routes.organisation.groups,
-    icon: <PiUsersThreeDuotone />,
-  },
+
   {
     name: 'Utilisateurs',
   },

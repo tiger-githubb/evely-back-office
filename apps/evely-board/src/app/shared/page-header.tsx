@@ -1,19 +1,15 @@
-import { ArchivesDirResponse } from '@/server/services/archives.service';
 import Breadcrumb from '@core/ui/breadcrumb';
 import cn from '@core/utils/class-names';
-import { Text, Title } from 'rizzui';
-import ColorBadge from './table/colors-badge';
+import { Title } from 'rizzui';
 
 export type PageHeaderTypes = {
   title: string;
   breadcrumb: { name: string; href?: string }[];
   className?: string;
-  directoryData?: ArchivesDirResponse;
 };
 
 export default function PageHeader({
   title,
-  directoryData,
   breadcrumb,
   children,
   className,
@@ -29,14 +25,6 @@ export default function PageHeader({
             >
               {title}
             </Title>
-            {directoryData && (
-              <div className="flex items-center gap-x-2">
-                <ColorBadge color={directoryData.data.group.color ?? ''} />
-                <Text className="text-nowrap text-gray-500">
-                  {directoryData.data.group.name}
-                </Text>
-              </div>
-            )}
           </div>
           <Breadcrumb
             separator=""

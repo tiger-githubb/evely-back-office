@@ -1,6 +1,5 @@
 'use client';
 import { useModal } from '@/app/shared/modal-views/use-modal';
-import { getGroups } from '@/server/services/groups.service';
 import { getRoles } from '@/server/services/roles.service';
 import { addUser, updateUser } from '@/server/services/users.service';
 import { User } from '@/types/user.type';
@@ -38,21 +37,10 @@ export default function UserForm({ type = 'Create', FormData }: UserFormProps) {
     queryFn: getRoles,
   });
 
-  const { data: groupsData, isLoading: isLoadingGroups } = useQuery({
-    queryKey: ['groups'],
-    queryFn: getGroups,
-  });
-
   const roleOptions =
     rolesData?.data.map((role) => ({
       value: role.id,
       label: role.name,
-    })) || [];
-
-  const groupOptions =
-    groupsData?.data.map((group) => ({
-      value: group.id,
-      label: group.name,
     })) || [];
 
   const mutation = useMutation({
@@ -84,7 +72,6 @@ export default function UserForm({ type = 'Create', FormData }: UserFormProps) {
           email: FormData?.email || '',
           password: FormData?.password || '',
           roleId: FormData?.roleId || 0,
-          groupId: FormData?.groupId || 0,
           active: FormData?.active || false,
           isSuperAdmin: FormData?.isSuperAdmin || false,
         },
@@ -176,31 +163,6 @@ export default function UserForm({ type = 'Create', FormData }: UserFormProps) {
                   getOptionValue={(option) => option.value}
                   displayValue={(selected) =>
                     roleOptions.find((role) => role.value === selected)
-                      ?.label ?? ''
-                  }
-                />
-              )}
-            />
-          )}
-
-          {isLoadingGroups ? (
-            <div className="flex items-center space-x-2">
-              <Loader size="sm" />
-            </div>
-          ) : (
-            <Controller
-              name="groupId"
-              control={control}
-              render={({ field: { onChange, value } }) => (
-                <Select
-                  label="Group"
-                  options={groupOptions}
-                  value={value}
-                  onChange={onChange}
-                  error={errors.groupId?.message}
-                  getOptionValue={(option) => option.value}
-                  displayValue={(selected) =>
-                    groupOptions.find((group) => group.value === selected)
                       ?.label ?? ''
                   }
                 />

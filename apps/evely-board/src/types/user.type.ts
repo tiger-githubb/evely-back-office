@@ -17,13 +17,4 @@ export type User = {
       permissions: string[];
     }[];
   };
-  groupId: number;
-  group: {
-    createdAt: string | null;
-    id: number;
-    name: string;
-    parentId: number;
-    parent: null;
-    children: null;
-  };
 };
